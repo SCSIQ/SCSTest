@@ -18,6 +18,7 @@ public class JavaTest {
         // TODO code application logic here
         System.out.println( "Hello World!" );
         System.out.println("How are you?");
+        //Coucou
     }
     
 }

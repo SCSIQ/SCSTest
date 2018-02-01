@@ -18,7 +18,7 @@ public Operation() {
 
 public String toString() {
     System.out.println("Montant : "+montant+ " Libellé : "+ libelle);
-    dateOp.toString();
+    //dateOp.donneDate();
     return null;
 }
 }

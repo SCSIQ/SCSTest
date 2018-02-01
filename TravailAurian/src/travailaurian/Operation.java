@@ -1,0 +1,20 @@
+package travailaurian;
+
+public class Operation {
+    private int montant;
+    private String libelle;
+    private Date dateOp;
+    
+    public Operation() {
+        montant=0;
+        libelle="Aucun";
+        Date dateOp = new Date (00,00,00);
+    }
+    
+    public String toString()
+    {
+        System.out.println("Montant : "+montant+" | Libelle : "+libelle);
+        dateOp.toString();
+        return null;
+    }
+}

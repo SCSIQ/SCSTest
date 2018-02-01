@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package travailemilie;
 
 /**
@@ -11,11 +6,12 @@ package travailemilie;
  */
 public class TravailEmilie {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Date d1 = new Date (5, 3, 1998);
+        //System.out.println(d1.donneDate());
+        
+        Operation op1 = new Operation();
+        op1.toString();
     }
     
 }

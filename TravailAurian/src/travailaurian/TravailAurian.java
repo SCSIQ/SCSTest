@@ -1,21 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package travailaurian;
 
-/**
- *
- * @author aurian
- */
 public class TravailAurian {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Date d1 = new Date (3,5,2018);
+        //System.out.println(d1.toString());
+        
+        Operation op1 = new Operation ();
+        op1.toString();
     }
     
 }

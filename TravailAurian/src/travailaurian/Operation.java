@@ -14,7 +14,7 @@ public class Operation {
     public String toString()
     {
         System.out.println("Montant : "+montant+" | Libelle : "+libelle);
-        dateOp.toString();
+        //dateOp.toString();
         return null;
     }
 }

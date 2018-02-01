@@ -16,4 +16,7 @@ public class CompteCourant extends Compte{          // extends = fille de compte
     public double getmontantDecouvertAutorise() {
         return montantDecouvertAutorise;    
     }
+    public void setMontant(double m){
+           montantDecouvertAutorise=m;
+  }
 }

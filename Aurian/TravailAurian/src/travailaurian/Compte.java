@@ -15,4 +15,10 @@ public class Compte {
         solde=0;
         Date dateOuverture = new Date (00,00,00);
     }
+    
+    public String toString()
+    {
+       return "C'est un compte";         
+    }
+    
 }

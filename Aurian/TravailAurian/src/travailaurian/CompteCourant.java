@@ -18,4 +18,8 @@ public class CompteCourant extends Compte {
     {
         montantDecouvertAutorise=m;
     }
+    public String toString()
+    {
+       return "C'est un compte courant";         
+    }
 }

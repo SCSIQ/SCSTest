@@ -17,7 +17,6 @@ public class Date {
     }
     public String toString()
     {
-        System.out.println(String.valueOf(jour) + "/" + String.valueOf(mois) + "/" + String.valueOf(annee));
-        return null;
+        return String.valueOf(jour) + "/" + String.valueOf(mois) + "/" + String.valueOf(annee);
     }
 }

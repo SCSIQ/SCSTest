@@ -13,8 +13,6 @@ public class Operation {
     
     public String toString()
     {
-        System.out.println("Montant : "+montant+" | Libelle : "+libelle);
-        //dateOp.toString();
-        return null;
+        return "Montant : "+montant+" | Libelle : "+libelle+" | "+dateOp.toString();
     }
 }

@@ -6,7 +6,7 @@ public class TravailAurian {
         //System.out.println(d1.toString());
         
         Operation op1 = new Operation ();
-        op1.toString();
+        System.out.println(op1.toString());
     }
     
 }

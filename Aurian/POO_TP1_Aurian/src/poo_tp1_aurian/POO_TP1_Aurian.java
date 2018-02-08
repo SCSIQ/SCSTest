@@ -16,6 +16,23 @@ public class POO_TP1_Aurian {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        String s = "ma chaine";
+        System.out.println(compteNbChar(s));
+        
+    }
+    
+    public static int compteNbChar(String s)
+    {
+        int longueur = s.length();
+        int compteur = 0;
+        for (int i = 0; i >= s.length(); i++)
+        {
+            if((s.charAt(i)).equals('a'))
+            {
+                compteur ++;
+            }
+        }
+        return compteur;
     }
     
 }

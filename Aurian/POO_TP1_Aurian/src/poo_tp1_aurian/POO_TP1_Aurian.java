@@ -25,11 +25,15 @@ public class POO_TP1_Aurian {
     {
         int longueur = s.length();
         int compteur = 0;
-        for (int i = 0; i >= s.length(); i++)
+        for (int i = 1; i <= longueur; i++)
         {
-            if((s.charAt(i)).equals('a'))
+            if(s.charAt(i)=='a')
             {
-                compteur ++;
+                compteur++;
+            }
+            else 
+            {
+                compteur = -1;
             }
         }
         return compteur;

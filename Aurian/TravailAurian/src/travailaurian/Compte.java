@@ -13,7 +13,7 @@ public class Compte {
     {
         numC=proprio="Erreur";
         solde=0;
-        Date dateOuverture = new Date (00,00,00);
+        dateOuverture = new Date (00,00,00);
     }
     
     public String toString()

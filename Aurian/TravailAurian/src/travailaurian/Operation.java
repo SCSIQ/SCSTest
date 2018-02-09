@@ -8,11 +8,11 @@ public class Operation {
     public Operation() {
         montant=0;
         libelle="Aucun";
-        Date dateOp = new Date (00,00,00);
+        dateOp = new Date (00,00,00);
     }
     
     public String toString()
     {
-        return "Montant : "+montant+" | Libelle : "+libelle;
+        return "Montant : "+montant+" | Libelle : "+libelle+" | "+dateOp.toString();
     }
 }

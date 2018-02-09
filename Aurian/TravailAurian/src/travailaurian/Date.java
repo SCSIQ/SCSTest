@@ -7,7 +7,7 @@ public class Date {
                     
     public Date()
     {
-        jour=mois=annee=1;
+        jour=mois=annee=1;;
     }
     public Date(int j,int m,int a)
     {

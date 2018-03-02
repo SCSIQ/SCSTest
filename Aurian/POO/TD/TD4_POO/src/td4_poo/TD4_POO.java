@@ -26,7 +26,20 @@ public class TD4_POO {
         System.out.println(v2.toString());
         v2.repeindre();*/
         Personne p1 = new Personne("Boucquemont","Lucie");
+        
         System.out.println(p1.toString());
+        
+        p1.deposer(18750);
+        System.out.println(p1.toString());
+        p1.retirer(8750);
+        System.out.println(p1.toString());
+                
+        Personne p2 = new Personne("Durand","Aurian");  
+        System.out.println(p2.toString());  
+         p2.deposer(19852350);
+        System.out.println(p2.toString());
+        p2.retirer(9852350);
+        System.out.println(p2.toString());
     }
     
     

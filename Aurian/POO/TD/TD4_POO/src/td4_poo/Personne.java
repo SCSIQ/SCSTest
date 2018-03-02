@@ -26,6 +26,7 @@ public class Personne {
     
     /*OPERATIONS*/
     public void affecterCompte(Compte c) {
+        monCompte = c;
     }
     
     public String toString() {

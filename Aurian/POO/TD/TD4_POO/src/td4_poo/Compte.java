@@ -26,10 +26,13 @@ public class Compte {
     
     /*OPERATIONS*/
     public void deposer(int s) {
+        solde = solde + s;
     }
     public void retirer(int s) {
+        solde = solde - s;
     }
     public void affecterPrioprietaire(Personne p) {
+        client = p;
     }
     public String toString() {
         return "Numéro de compte : "+numero+" | Solde : "+solde;

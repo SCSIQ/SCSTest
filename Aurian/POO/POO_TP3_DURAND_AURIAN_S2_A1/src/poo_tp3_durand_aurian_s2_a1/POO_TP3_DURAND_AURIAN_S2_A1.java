@@ -5,6 +5,7 @@
  */
 package poo_tp3_durand_aurian_s2_a1;
 
+
 /**
  *
  * @author aurian
@@ -16,8 +17,16 @@ public class POO_TP3_DURAND_AURIAN_S2_A1 {
      */
     public static void main(String[] args) {
         int entreeUser;
-        DAB distributeur = new DAB(24,10,5);
-        
+        DAB d = new DAB(24,10,5);
+        System.out.print("Entrez une somme à distribuer (multiple de 10) : ");
+        entreeUser=Clavier.lireInt();
+        while (entreeUser!=0) {
+            if (d.estVide()) {
+                d.remplissage(10,10,10);
+            }
+            d.distribue(entreeUser);
+            System.out.print("Entrez une somme à distribuer (multiple de 10) : ");
+            entreeUser=Clavier.lireInt();
+        }
     }
-    
 }

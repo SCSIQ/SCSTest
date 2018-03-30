@@ -7,15 +7,22 @@ package tp5;
 
 /**
  *
- * @author 
+ * @author durand aurian
  */
 public class Roue {
     private int taille;
     
+    /**
+     * 
+     * @param taille taille de la roue 
+     */
     public Roue(int taille){
         this.taille=taille;
     }
-    
+    /**
+     * 
+     * @return une chaine de caractères décrivant la roue
+     */
     @Override
     public String toString(){
         return "[Roue] "+taille+" pouces";

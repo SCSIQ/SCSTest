@@ -7,16 +7,24 @@ package tp5;
 
 /**
  *
- * @author 
+ * @author durand aurian 
  * 
  */
 public class Conducteur {
     private String nom;
     
+    /**
+     * 
+     * @param nom le nom du conducteur
+     */
     public Conducteur(String nom){
         this.nom=nom;
     }
     
+    /**
+     * 
+     * @return une chaine de caractères décrivant le conducteur 
+     */
     public String toString(){
         return "[Conducteur] "+nom;
     }

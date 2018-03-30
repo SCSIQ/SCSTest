@@ -7,15 +7,23 @@ package tp5;
 
 /**
  *
- * @author 
+ * @author durand aurian 
  */
 public class Remorque {
     private int capacite;
     
+    /**
+     * 
+     * @param capacite capacité de la remorque en litres
+     */
     public Remorque(int capacite){
         this.capacite=capacite;
     }
     
+    /**
+     * 
+     * @return une chaine de caractères décrivant la remorque
+     */
     public String toString(){
         return "[Remorque] "+capacite+" litres";
     }

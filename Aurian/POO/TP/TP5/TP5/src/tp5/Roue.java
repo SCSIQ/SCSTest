@@ -19,6 +19,7 @@ public class Roue {
     public Roue(int taille){
         this.taille=taille;
     }
+    
     /**
      * 
      * @return une chaine de caractères décrivant la roue

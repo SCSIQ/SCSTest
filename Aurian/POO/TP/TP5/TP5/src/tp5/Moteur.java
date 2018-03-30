@@ -12,9 +12,9 @@ package tp5;
 public class Moteur {
     
     private int puissance;
-    private boolean demarre;
+    private boolean demarre=false;
     private Voiture voiture;
-    private boolean enPanne;
+    private boolean enPanne=false;
     
     /**
      * 
@@ -24,8 +24,6 @@ public class Moteur {
     public Moteur(int cv, Voiture v){
         puissance=cv;
         voiture=v;
-        enPanne=false;
-        demarre=false;
     }
 
     /**

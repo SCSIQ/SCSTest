@@ -24,8 +24,16 @@ public class Fabrique {
         return instance;
     }
     
-    public Case construireCase(int line, int column, Carte carte) {
-        return null;
+    //construction d'une case
+    public static Case construireCase(TypeCase type,int line,int column,Carte carte) {
+        Case nouvelleCase = null;
+        switch(type) {
+            case Sol: nouvelleCase = new CaseSol(line,column,carte);
+                break;
+            case Mur: nouvelleCase = new CaseMur(line,column,carte);
+                break;
+        }
+        return nouvelleCase;
     }
     
 }

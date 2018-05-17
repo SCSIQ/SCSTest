@@ -28,17 +28,23 @@ public class Parseur {
     //Parse une ligne du fichier
     public void parseLigne(int numLigne,String ligne) {
         //lecture caractère par caractère de la ligne et création de la case adaptée
-        for(int numColonne = 0; numColonne < ligne.length(); numColonne++) {
-            char c = ligne.charAt(numColonne);
+        for(int numColumn = 0; numColumn < ligne.length(); numColumn++) {
+            char c = ligne.charAt(numColumn);
             
             //creation de la case
-            Case nouvelleCase = null;
+            Case newCase = null;
             switch(c) {
-                case 'M' : nouvelleCase = FabriqueCases.construireCase(TypeCase.Mur, numLigne, numColonne,this.carte); break;
-                default : nouvelleCase = FabriqueCases.construireCase(TypeCase.Sol, numLigne, numColonne,this.carte); break;
+                case 'M' : newCase = Fabrique.construireCase(TypeCase.Mur, numLigne, numColumn,this.carte); break;
+                default : newCase = Fabrique.construireCase(TypeCase.Sol, numLigne, numColumn,this.carte); break;
             }
-            this.carte.setCase(numLigne, numColonne, nouvelleCase);
+            this.carte.setCase(newCase);
+            
+            switch(c) {
+                case 'S' : carte.setStart(newCase);
+                case 'E' : carte.setExit(newCase);
+            }
         }
+    }
     
     //Lance le parsage du fichier
     public void lecture() throws FileNotFoundException, IOException {
@@ -48,14 +54,12 @@ public class Parseur {
         BufferedReader fichier = new BufferedReader(new FileReader(file));
         
         //Lecture ligne à ligne
-        String ligne;
-        int numLigne = 0;
-        while((ligne = fichier.readLine()) != null){
+        String line;
+        int numLine = 0;
+        while((line = fichier.readLine()) != null){
             //parsage de la ligne
-            this.parseLigne(numLigne, ligne);
-            numLigne++;
+            this.parseLigne(numLine, line);
+            numLine++;
         }
     }
-}
-    
 }

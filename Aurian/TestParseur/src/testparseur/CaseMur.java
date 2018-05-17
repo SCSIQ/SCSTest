@@ -11,6 +11,10 @@ package testparseur;
  */
 public class CaseMur extends Case {
 
+    public CaseMur(int line, int column, Carte carte) {
+        super(line, column, carte);
+    }
+
     @Override
     public TypeCase getType() {
         return TypeCase.Mur;

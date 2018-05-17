@@ -11,6 +11,10 @@ package testparseur;
  */
 public class CaseSol extends Case {
 
+    public CaseSol(int line, int column, Carte carte) {
+        super(line, column, carte);
+    }
+
     @Override
     public TypeCase getType() {
         return TypeCase.Sol;

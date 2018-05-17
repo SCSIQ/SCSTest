@@ -39,4 +39,17 @@ public abstract class Case {
         this.column = column;
     }
     
+    public Case getRight() {
+        return carte.getCase(line, column+1);
+    }
+    public Case getLeft() {
+        return carte.getCase(line, column-1);
+    }
+    public Case getUpper() {
+        return carte.getCase(line+1, column);
+    }
+    public Case getDown() {
+        return carte.getCase(line-1, column);
+    }
+    
 }
